@@ -2,9 +2,9 @@ pipeline {
   agent any
 
   stages {
-    stage('testing env var') {
+    stage('clean up the workspaces') {
       steps {
-        echo sh(script: 'printenv', returnStdout: true)
+        echo $env.WORKSPACE
       }
     }
   }
