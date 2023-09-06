@@ -7,4 +7,5 @@ pipeline {
         sh script: 'env', returnStdout: true
       }
     }
+  }
 }
