@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('testing env var') {
       steps {
-        sh script: 'env', returnStdout: true
+        sh script: 'printenv', returnStdout: true
       }
     }
   }
