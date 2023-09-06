@@ -3,6 +3,8 @@ pipeline {
 
   stages {
     stage('testing env var') {
-      sh script: 'env', returnStdout: true
+      steps {
+        sh script: 'env', returnStdout: true
+      }
     }
 }
